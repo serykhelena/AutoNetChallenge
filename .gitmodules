@@ -9,3 +9,6 @@
 	path = teb_local_planner
 	url = https://github.com/rst-tu-dortmund/teb_local_planner.git
 	branch = melodic-devel
+[submodule "ydlidar_ros"]
+	path = ydlidar_ros
+	url = https://github.com/YDLIDAR/ydlidar_ros

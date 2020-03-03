@@ -2,6 +2,7 @@
 <launch>
    
     <arg name="lidar" default="false" />
+    <arg name="lidar_new_driver" default="false" />
     <arg name="camera_s" default="false" />
     <arg name="camera_r" default="false" />
     <arg name="uc" default="false" />
@@ -15,6 +16,10 @@
     </include>
 
     <include if="$(arg lidar)" file="$(find wr8_software)/launch/base/lidar.launch">
+        <!-- All defaults -->
+    </include>
+
+    <include if="$(arg lidar_new_driver)" file="$(find wr8_software)/launch/base/lidar_new_driver.launch">
         <!-- All defaults -->
     </include>
 
